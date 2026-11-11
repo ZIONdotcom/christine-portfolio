@@ -222,7 +222,7 @@ function renderProjects() {
     const titleRow = createElement("div", "project-title-row");
     const title = createElement("h3", "", project.title);
 
-    const button = createElement("button", "arrow-link", "↗");
+    const button = createElement("button", "arrow-link");
     button.type = "button";
     button.setAttribute("aria-label", `View ${project.title} details`);
 
