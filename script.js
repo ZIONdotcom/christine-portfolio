@@ -302,7 +302,7 @@ function showProject(project) {
       const anchor = createElement(
         "a",
         "",
-        link.label + " ↗"
+        link.label
       );
 
       anchor.href = link.url;
