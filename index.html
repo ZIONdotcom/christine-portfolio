@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christine G. Andres — Software Development and UI/UX Design Portfolio">
+  <title>Christine G. Andres | The Archive</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo">THE ARCHIVE<span>®</span></a>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="themeToggle" class="theme-toggle">☼ Theme</button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero section" id="home">
+    <p class="eyebrow">PERSONAL PORTFOLIO · 2026</p>
+
+    <p class="hero-label">SOFTWARE DEVELOPMENT / UI/UX DESIGN</p>
+
+    <h1>
+      Building things<br>
+      <em>with purpose.</em>
+    </h1>
+
+    <div class="hero-bottom">
+      <p>
+        A curated collection of software projects, interface designs,
+        and professional experiences shaped by curiosity,
+        creativity, and technology.
+      </p>
+
+      <a href="#projects" class="text-link">Explore the archive ↘</a>
+    </div>
+
+    <div class="hero-footer">
+      <span>CHRISTINE G. ANDRES</span>
+      <span>DEVELOP · DESIGN · DOCUMENT</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">01 / SELECTED WORK</p>
+        <h2>The project archive<span>.</span></h2>
+      </div>
+
+      <p class="section-description">
+        A selection of academic and development projects,
+        from concept to implementation.
+      </p>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Development">Development</button>
+        <button class="filter-btn" data-filter="UI/UX">UI/UX</button>
+      </div>
+
+      <input
+        type="search"
+        id="projectSearch"
+        placeholder="Search projects..."
+        aria-label="Search projects"
+      >
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience-section" id="experience">
+    <div class="section">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / PROFESSIONAL JOURNEY</p>
+          <h2>Experience<span>.</span></h2>
+        </div>
+
+        <p class="section-description">
+          Learning, building, testing, and improving software
+          in a professional environment.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <article class="timeline-item">
+          <p class="timeline-date">JULY 2025 — PRESENT</p>
+
+          <div>
+            <h3>Software Quality Assurance Analyst</h3>
+            <p class="company">Quadrant Alpha Technology Inc.</p>
+
+            <p>
+              Perform manual and regression testing, review system
+              requirements, create and execute test cases, validate
+              data using SQL, and coordinate defects, client-requested
+              improvements, and deployment tickets.
+            </p>
+
+            <p class="skills">
+              MANUAL TESTING / REGRESSION / SQL / JIRA / HEIDISQL
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <p class="timeline-date">FEBRUARY 2025 — MAY 2025</p>
+
+          <div>
+            <h3>Software Developer Intern</h3>
+            <p class="company">Quadrant Alpha Technology Inc.</p>
+
+            <p>
+              Developed client-requested features and resolved bugs,
+              including CRUD and access-control modules using PHP,
+              Symfony, JavaScript, and MVC architecture.
+            </p>
+
+            <p class="skills">
+              PHP / SYMFONY / JAVASCRIPT / MVC / GIT / DOCKER
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+
+    <div>
+      <p class="eyebrow">03 / A LITTLE ABOUT ME</p>
+      <h2>
+        Curious by nature.<br>
+        <em>Practical by design.</em>
+      </h2>
+    </div>
+
+    <div class="about-content">
+      <p>
+        I'm Christine G. Andres, an IT graduate with experience
+        in software quality assurance and software development.
+        I enjoy turning requirements into working features and
+        thoughtful interfaces—and making sure the details work
+        as intended.
+      </p>
+
+      <p class="eyebrow">TOOLS & TECHNOLOGIES</p>
+
+      <div class="tech-list">
+        <span>PHP</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+        <span>Dart</span>
+        <span>C#</span>
+        <span>Symfony</span>
+        <span>Flutter</span>
+        <span>MySQL</span>
+        <span>Git</span>
+        <span>Jira</span>
+        <span>Docker</span>
+        <span>Figma</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+
+      <p class="education">
+        <strong>EDUCATION</strong><br>
+        BS Information Technology<br>
+        STI College, Balagtas<br>
+        August 2021 — June 2025
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section contact-inner">
+
+      <div>
+        <p class="eyebrow">04 / GET IN TOUCH</p>
+        <h2>Have a project<br>in mind<span>?</span></h2>
+      </div>
+
+      <div class="contact-content">
+        <p>
+          I'm open to conversations about software development,
+          UI/UX, and opportunities to build useful things.
+        </p>
+
+        <a href="mailto:christine.andres1002@gmail.com" class="email-link">
+          christine.andres1002@gmail.com ↗
+        </a>
+
+        <a href="https://github.com/ZIONdotcom"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub Profile ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="#home" class="logo">THE ARCHIVE®</a>
+  <span>DESIGNED & CURATED BY CHRISTINE G. ANDRES</span>
+  <a href="#home">BACK TO TOP ↑</a>
+</footer>
+
+<!-- PROJECT CASE STUDY POPUP -->
+<dialog id="projectDialog">
+  <button id="dialogClose" class="dialog-close" aria-label="Close">×</button>
+  <div id="dialogContent"></div>
+</dialog>
+
+</body>
+</html>
