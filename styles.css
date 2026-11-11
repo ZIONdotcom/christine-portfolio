@@ -643,7 +643,41 @@ h2 span {
     width: 100%;
   }
 
+  .external-arrow {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  .external-arrow::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 1px;
+    background: currentColor;
+    left: 0;
+    top: 7px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+
+  .external-arrow::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 1px;
+    top: 1px;
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+  }
+
   #projectDialog {
     padding: 22px;
   }
+
+
 }

@@ -309,6 +309,12 @@ function showProject(project) {
       anchor.target = "_blank";
       anchor.rel = "noopener noreferrer";
 
+      const arrow = document.createElement("span");
+      arrow.className = "external-arrow";
+      arrow.setAttribute("aria-hidden", "true");
+
+      anchor.append(" ", arrow);
+
       linksContainer.append(anchor);
     });
 
