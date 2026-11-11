@@ -222,14 +222,20 @@ function renderProjects() {
     const titleRow = createElement("div", "project-title-row");
     const title = createElement("h3", "", project.title);
 
-    const button = createElement("button", "arrow-link");
+    const button = createElement("button", "arrow-link", "");
+    
+    const arrow = document.createElement("span");
+    arrow.className = "external-arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    
+    button.append(arrow);
+    
     button.type = "button";
     button.setAttribute("aria-label", `View ${project.title} details`);
-
+    
     button.addEventListener("click", () => {
       showProject(project);
     });
-
     titleRow.append(title, button);
 
     card.append(
